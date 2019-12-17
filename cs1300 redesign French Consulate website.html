@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+    <title> France in the United States </title>
+    <style>
+        h1 {
+            font-family:  Georgia, 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 1.25em;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        
+        }
+        h2 {
+            color:black;
+            font-family: Roboto, Verdana;
+            text-transform: uppercase;
+            font-weight: normal;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        h3{
+            font-family: Roboto, Verdana;
+            font-weight: normal;
+        }
+        .btext {
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            vertical-align: middle;
+            display:inline-block;
+            padding: 10px;
+            font-family:  Georgia, 'Times New Roman', Times, serif;
+        }
+        li {
+	       list-style: none;
+	        margin: 10px;
+            float: left;
+            text-align: center;
+            padding: 10px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 25px 2fr 20px;
+            font-family: Roboto, sans-serif;
+            background-image: url('france.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom;
+            
+            
+        }
+        .headANDlogo{
+            grid-column: 1 / 3;
+	        grid-row: 1;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            align-content: center;
+            float: right;
+            text-align: center;
+        }
+        .header{
+            margin: 20%;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        .logo{
+            
+            padding: 15%;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .address{
+            color: rgb(139, 136, 136);
+            margin: 20px;
+            color: lightslategrey;
+            grid-column: 3;
+	        grid-row: 1;
+            
+        }
+        .Search{
+            /* grid-column: 1 / 4;
+	        grid-row: 2; */
+            color: rgb(139, 136, 136);
+            background-color: lightgrey;
+            text-transform: uppercase;
+            padding: 5%;
+            grid-column: 3;
+	        grid-row: 2;
+            vertical-align: middle;
+            font-size: 100%;
+            font-family: Roboto, sans-serif;
+            
+            
+            
+
+        }
+        .textbox{
+            grid-column: 1 / 3;
+	        grid-row: 2;
+            justify-content: center;
+            align-content: center;
+            text-align: left;
+            padding-left: 10%;
+            border-bottom: 1px solid lightgray;
+        }
+        nav {
+            margin: 20px;
+            grid-column: 1;
+	        grid-row: 3;
+            border: 1px solid lightgray;
+        }
+        .Events{
+            grid-column: 2;
+	        grid-row: 3;
+            /* display: grid;
+            grid-gap: 30px; */
+            grid-template-columns: 1fr 1fr;
+            /* float: center; */
+            
+        }
+        .picsbox{
+            border: 1px solid lightgray;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr 3fr;
+            justify-content: center;
+            align-content: center;
+            /* float: center; */
+            float: right;
+            text-align: center;
+            
+        }
+        .pic{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+            padding: 15%;
+            align-content: center;
+        }
+
+        .QuickAccess{
+            grid-column: 3;
+	        grid-row: 3;
+            border: 1px solid lightgray;
+            padding: 10%;
+            margin: 10px;
+            
+        }
+        footer{
+            grid-column: 1 / 4;
+	        grid-row: 4;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .footerinfo{
+            color:blue;
+        }
+ 
+
+@media (max-width: 600px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.1fr 5px 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-auto-flow: row;        
+    }
+    .headerANDlogo {
+        grid-row: 1; 
+        grid-column: 1;
+    }
+    .textbox{
+        grid-row: 2; 
+        grid-column: 1; 
+        
+    }
+    .Search {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    nav {
+        grid-row: 4; 
+        grid-column: 1;
+    }
+    .Events {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .QuickAccess {
+        grid-row: 6;
+        grid-column: 1;
+    }
+    footer {
+        grid-row: 7;
+        grid-column: 1;
+    }
+    .address{
+        grid-row: 8;
+        grid-column: 1; 
+        color: gray;
+        font-size: 0.8em;
+         
+    }
+
+}
+    </style>
+</head>
+
+
+<body>
+    <meta name="viewport" content="width=device-width">
+    <div class = "headANDlogo">
+        <div class ="logo"><img src="logo.png" style="max-width:140%;"  alt="Consulate Logo"></div> 
+
+        <div class="header">
+                <h1>France in the United States
+                <br>
+                <p>Consulate General of France in Boston</p>
+                </h1>
+                
+        </div>
+    </div>
+    
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li>The Consulate General</li>
+            <li>France in the U.S.</li>
+            <li>French-American relations</li>
+            <li>Visas for France</li>
+            <li>Culture and Education</li>
+            <li>Office for Science and Technology</li>
+            <li>French Community in New England</li>
+        </ul>
+    </nav>
+    
+    <div class = "address btext">
+            <p>Boston Consulate General</p>
+            <p>Park Square Building </p>
+            <p>31 Saint James Avenue</p>
+            <p>Boston, MA 02116 USA</p>
+            <p>Phone: +1(617) 832 4444</p>
+           
+    </div>
+    <div class="Search btext">
+            <img src="search icon.png" width= 10px alt="search icon">
+            Search
+    </div>
+    <div class="textbox"><font color="blue">English </font>| Francais</div>
+    <div class="Events btext">
+            <p><div class="footerinfo btext">Home > Office for Science and Technology > Events</font></div></p>
+            <h2>Events</h2>
+            <br>
+            <div class = "EventPic picsbox">
+                    <div class = "pic">
+                        <img src="cafe.png" alt="Cafe">
+                    </div>
+                    <div class = "eventtext btext">
+                        <h3>Café des Entrepreneurs</h3>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor diam.
+                    </div> 
+                    <br> 
+            </div>
+
+            <div class = "EventPic2 picsbox">
+                    <div class = "pic">
+                        <img src="science cafe.png" alt="Cafe">
+                    </div>
+                    <div class = "eventtext btext">
+                    <br>
+                    <h3>Sciences Cafés</h3>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor diam.
+                    </div>
+                    
+            </div>
+            
+             
+
+    </div>
+    <div class="QuickAccess">
+            <h2>Quick Access</h2>
+            <br>
+            <ul>
+                <li>Applying for a French Visa in The US</li>
+                <li>French Associations in New England</li>
+                <li>Business Actors in New-England</li>
+                <li>The Legion d’Honneur for US veterans</li>
+            </ul>
+
+    </div>
+    
+    <footer>
+        <div class="footerinfo btext">
+                <h2>France in the United States</h2>
+                <hr>
+                <ul>
+                        <li>Legal information</li>
+                </ul>
+        
+                
+        </div>
+        <div class="footerinfo btext">
+            <h2>Institutional Links</h2>
+            <hr>
+            <ul>
+                    <li>> france.fr</li>
+                    <li>>gouvernement.fr</li>
+                    <li>>data.gouv.fr</li>
+                    <li>>diplomatie.gouv.fr</li>
+                    <li>>legifrance.gouv.fr</li>
+                    <li>>service-public.fr</li>
+            </ul>
+
+        </div>
+        
+        
+    </footer>    
+</body>
+
+</html>
